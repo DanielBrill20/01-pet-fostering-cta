@@ -1,0 +1,122 @@
+/* Use a modern, easy-to-read font */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f7fa; /* light teal background for the page */
+}
+
+/* Style for the CTA banner section */
+.cta-banner {
+  background-color: #1e88a8; /* fallback color */
+  color: #ffffff; /* white text for contrast */
+  padding: 100px 20px; /* tall banner */
+  text-align: center;
+  background-image: linear-gradient(rgba(30,136,168,0.6), rgba(30,136,168,0.6)), url('img/cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Make sure the content stays above the overlay */
+.cta-banner h1,
+.cta-banner p,
+.cta-banner .cta-button {
+  position: relative;
+  z-index: 1;
+}
+
+/* Large, bold heading */
+.cta-banner h1 {
+  font-size: 2.5em;
+  margin-top: 0; /* remove extra space above heading */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Short description styling */
+.cta-banner p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Eye-catching CTA button */
+.cta-button {
+  display: inline-block;
+  background-color: #2ed8c3; /* bright teal for the button */
+  color: #1e88a8; /* blue text for contrast */
+  padding: 15px 35px;
+  font-size: 1.1em;
+  text-decoration: none;
+  border-radius: 5px; /* slightly rounded corners */
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(30, 136, 168, 0.15); /* subtle shadow */
+  transition: background-color 0.2s;
+}
+
+/* Button hover effect */
+.cta-button:hover {
+  background-color: #26b6b6; /* slightly darker teal on hover */
+  color: #ffffff;
+}
+
+/* Simple site header styling */
+.site-header {
+  background-color: #2ed8c3; /* bright teal, matches button */
+  color: #1e88a8; /* blue text for contrast */
+  text-align: center;
+  padding: 20px 0;
+}
+
+.site-header h2 {
+  margin: 0;
+  font-size: 2em;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* Info section with two columns */
+.info-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(30, 136, 168, 0.08);
+  text-align: center;
+}
+
+/* Image and text side by side using inline-block */
+.info-image {
+  width: 45%;
+  max-width: 300px;
+  vertical-align: middle;
+  border-radius: 15px;
+  margin-right: 5%;
+  display: inline-block;
+}
+
+.info-text {
+  width: 45%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 700px) {
+  .info-image,
+  .info-text {
+    display: block;
+    width: 100%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+  }
+  .info-text {
+    text-align: center;
+  }
+}
